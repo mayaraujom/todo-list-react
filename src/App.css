@@ -1,11 +1,7 @@
 .App {
+  background-color: #F9F3EE;
   display: flex;
-}
-
-.section-list {
-  width: 50%;
-}
-
-.section-title {
-  width: 50%;
+  font-size: 1em;
+  font-family: 'Syne', sans-serif;
+  height: 100vh;
 }

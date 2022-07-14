@@ -1,0 +1,40 @@
+.section-list {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20vh;
+}
+
+.section-list h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.tasks-input-container {
+  margin-top: 2vh;
+  display: flex;
+}
+
+.tasks-input-container input {
+  width: 20vw;
+  padding: 5px;
+  font-size: 0.75em;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 28px;
+  box-shadow: 0px 0px 1px rgba(66, 66, 66, .0);
+}
+
+.tasks-input-container img {
+  width: 2vw;
+}
+
+
+.view-options-container {
+  display: flex;
+  margin-top: 1vh;
+}
