@@ -7,6 +7,8 @@ function List() {
   const [input, setInput] = useState('');
   const [tasksList, setTaskList] = useState([]);
   const [tasksToRender, setToRender] = useState([]);
+  const [editing, setEditingStatus] = useState(false);
+  const [idEdit, setIdEdit] = useState('');
 
   useEffect(() => {
     setToRender([...tasksList]);
@@ -49,13 +51,13 @@ function List() {
   }
 
   function completedTask(id) {
-    const task = tasksList.find((item) => item.id === id);
+    const currentTask = tasksList.find((item) => item.id === id);
     const newList = tasksList.map((tsk) => {
       if (tsk.id === id) {
         tsk = {
           completed: true,
-          id: task.id,
-          task: task.task,
+          id: currentTask.id,
+          task: currentTask.task,
           todo: false,
         };
       } return tsk;
@@ -63,8 +65,28 @@ function List() {
     setTaskList(newList);
   }
 
-  function editTask(id) {
-    console.log('hehe');
+  function editingTask(id) {
+    setEditingStatus(true);
+    const currentTask = tasksList.find((item) => item.id === id);
+    setInput(currentTask.task);
+    setIdEdit(id);
+  }
+
+  function addEditTask() {
+    const currentTask = tasksList.find((item) => item.id === idEdit);
+    const newTaskList = tasksList.map((tsk) => {
+      if (tsk.id === idEdit) {
+        tsk = {
+          completed: false,
+          id: currentTask.id,
+          task: input,
+          todo: true,
+        };
+      } return tsk;
+    });
+    setTaskList(newTaskList);
+    setEditingStatus(false);
+    setInput('');
   }
 
   function deleteTask(id) {
@@ -83,11 +105,21 @@ function List() {
           value={input}
           onChange={({ target }) => { setInput(target.value) }}
         />
-        <img
-          src="https://i.ibb.co/znks9Ff/icons8-add-100.png"
-          alt="icon by https://icons8.com"
-          onClick={ addTasks }
-        />
+        {
+          editing ? (
+            <img
+              src="https://i.ibb.co/znks9Ff/icons8-add-100.png"
+              alt="icon by https://icons8.com"
+              onClick={addEditTask}
+            />
+          ) : (
+            <img
+              src="https://i.ibb.co/znks9Ff/icons8-add-100.png"
+              alt="icon by https://icons8.com"
+              onClick={addTasks}
+            />
+          )
+        }
       </div>
       <div className="view-options-container">
         <input type="radio" id="view-options1"
@@ -107,21 +139,21 @@ function List() {
               <div className="todo-container" key={id}>
                 <p>{task}</p>
                 <div>
-                  <img 
+                  <img
                     src="https://i.ibb.co/XYcYrVz/icons8-edit-64.png"
                     alt="icon by https://icons8.com"
-                    onClick={ () => { editTask(id) }}                  
+                    onClick={() => { editingTask(id) }}
                   >
                   </img>
                   <img
                     src="https://i.ibb.co/wWL8Nv4/icons8-done-64.png"
                     alt="icon by https://icons8.com"
-                    onClick={ () => { completedTask(id) }}
+                    onClick={() => { completedTask(id) }}
                   />
                   <img
                     src="https://i.ibb.co/5YBG0R7/icons8-delete-64.png"
                     alt="icon by https://icons8.com"
-                    onClick={ () => { deleteTask(id) }}
+                    onClick={() => { deleteTask(id) }}
                   />
                 </div>
               </div>
