@@ -160,6 +160,11 @@ function List() {
             ) : (
               <div className="completed-container" key={id}>
                 <p>{task}</p>
+                <img
+                  src="https://i.ibb.co/5YBG0R7/icons8-delete-64.png"
+                  alt="icon by https://icons8.com"
+                  onClick={() => { deleteTask(id) }}
+                />
               </div>
             )
           ))
