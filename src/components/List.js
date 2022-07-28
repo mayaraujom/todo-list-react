@@ -127,7 +127,7 @@ function List() {
         <label htmlFor="optionAll">View All</label>
         <input type="radio" id="view-options2"
           name="view-options" value="to-do" onChange={(e) => taskFilter(e)} />
-        <label htmlFor="optionTodo">To-do</label>
+        <label htmlFor="optionTodo">To-Do</label>
         <input type="radio" id="view-options3"
           name="view-options" value="completed" onChange={(e) => taskFilter(e)} />
         <label htmlFor="optionCompleted">Completed</label>
