@@ -19,3 +19,11 @@ O objetivo do projeto foi criar uma To-do List onde a pessoa usuária poderia in
 - <a target="_blank" href="https://icons8.com/icon/5IZaXQn5qF1X/delete">Delete icon</a> by Icons8
 
 </details>
+
+## Resultado final
+
+- https://todo-list-react-opal.vercel.app/
+
+<a href="https://todo-list-react-opal.vercel.app/" target="_blank" rel="noreferrer"> <img src="https://i.ibb.co/2Z7kt6g/image.png" alt="Imagem do aplicativo desenvolvido"/> </a> 
+
+
