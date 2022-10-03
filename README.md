@@ -20,7 +20,7 @@ O objetivo do projeto foi criar uma To-do List onde a pessoa usuária poderia in
 
 </details>
 
-## Resultado final
+## Resultado
 
 - https://todo-list-react-opal.vercel.app/
 
