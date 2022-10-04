@@ -6,7 +6,7 @@ O objetivo do projeto foi criar uma To-do List onde a pessoa usuária poderia in
   <summary><strong>Tecnologias utilizadas</strong></summary>
 
 - React.js (Gerenciamento de estado com Context API)
-- CSS (Puro)
+- CSS (Flexbox)
 </details>
 
 <details>
