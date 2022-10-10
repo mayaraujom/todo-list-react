@@ -20,13 +20,6 @@ O objetivo do projeto foi criar uma To-do List onde a pessoa usuária poderia in
 
 </details>
 
-<details>
-  <summary><strong>Melhorias</strong></summary>
-  
-- Responsividade
-
-</details>
-
 ## Resultado
 
 - https://todo-list-react-opal.vercel.app/
