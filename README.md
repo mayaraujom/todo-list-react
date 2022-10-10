@@ -6,7 +6,7 @@ O objetivo do projeto foi criar uma To-do List onde a pessoa usuária poderia in
   <summary><strong>Tecnologias utilizadas</strong></summary>
 
 - React.js (Gerenciamento de estado com Context API)
-- CSS (Flexbox)
+- Responsividade para mobile e desktop
 </details>
 
 <details>
@@ -31,6 +31,12 @@ O objetivo do projeto foi criar uma To-do List onde a pessoa usuária poderia in
 
 - https://todo-list-react-opal.vercel.app/
 
-<a href="https://todo-list-react-opal.vercel.app/" target="_blank" rel="noreferrer"> <img src="https://i.ibb.co/2Z7kt6g/image.png" alt="Imagem do aplicativo desenvolvido"/> </a> 
+<p align=center>
+
+<a href="https://todo-list-react-opal.vercel.app/" target="_blank" rel="noreferrer"> <img src="https://i.ibb.co/9pRgLTY/image.png" alt="Imagem do aplicativo desenvolvido para mobile"/> </a> 
+
+<a href="https://todo-list-react-opal.vercel.app/" target="_blank" rel="noreferrer"> <img src="https://i.ibb.co/2Z7kt6g/image.png" alt="Imagem do aplicativo desenvolvido para desktop"/> </a>
+
+</p>
 
 
