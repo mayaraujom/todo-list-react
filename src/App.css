@@ -1,8 +1,23 @@
+@import url("styles/title.css");
+@import url("styles/list.css");
+
 .App {
   background-color: #F9F3EE;
+  color: rgb(44, 43, 43);
   display: flex;
   font-size: 1em;
   font-family: 'Syne', sans-serif;
   height: 100vh;
-  color: rgb(44, 43, 43);
+  justify-content: center;
+}
+
+@media screen and (min-width: 1375px) {
+  .App {
+    background-color: #F9F3EE;
+    color: rgb(44, 43, 43);
+    display: flex;
+    font-size: 1em;
+    font-family: 'Syne', sans-serif;
+    height: 100vh;
+  }
 }

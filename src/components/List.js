@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const MIN_LENGTH = 5;
-const MAX_LENGTH = 30;
+const MAX_LENGTH = 20;
 
 function List() {
   const [input, setInput] = useState('');
