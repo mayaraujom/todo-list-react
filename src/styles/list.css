@@ -12,31 +12,40 @@
 }
 
 .tasks-input-container {
-  display: flex;
+  align-items: center;
   margin-top: 2vh;
-  height: 3vh;
+  display: flex;
+  height: fit-content;
 }
 
 .tasks-input-container input {
-  width: 100vw;
-  padding: 5px;
-  font-size: 0.75em;
   border-width: 1px;
   border-color: #CCCCCC;
   background-color: #FFFFFF;
-  color: #000000;
   border-style: solid;
   border-radius: 5px;
   box-shadow: 0px 0px 1px rgba(66, 66, 66, .0);
+  color: #000000;
+  font-size: 0.75em;
+  padding: 5px;
+  width: 100vw;
+  height: max-content;
 }
 
-.tasks-input-container img {
-  width: 8vw;
+.tasks-input-container-img {
+  display: flex;
+  align-items: center;
+  width: fit-content;
 }
+
+.tasks-input-container-img img {
+  width: 40px;
+  height: 40px;
+}
+
 
 .view-options-container {
   display: flex;
-  margin-top: 1vh;
 }
 
 .todo-container,
@@ -77,40 +86,6 @@
   border-color: #CCF3EE;
 }
 
-/* 
-
-.todo-container p,
-.completed-container p {
-  display: flex;
-  margin-left: 10px;
-  width: 70%;
-}
-
-.todo-container div,
-.completed-container div {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 1vw;
-}
-
-.todo-container img,
-.completed-container img {
-  width: 20px;
-  margin-right: 0.5vw;
-}
-
-.todo-container img:hover,
-.completed-container img:hover {
-  cursor: pointer;
-}
-
-.completed-container {
-  background-color: #CCF3EE;
-  border-color: #CCF3EE;
-}
-
-*/
 @media screen and (min-width: 1375px) {
   .section-list {
     width: 50vw;
@@ -126,8 +101,10 @@
   }
 
   .tasks-input-container {
+    align-items: center;
     margin-top: 2vh;
     display: flex;
+    height: fit-content;
   }
 
   .tasks-input-container input {
@@ -143,18 +120,23 @@
     box-shadow: 0px 0px 1px rgba(66, 66, 66, .0);
   }
 
-  .tasks-input-container img {
-    width: 2vw;
+  .tasks-input-container-img {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+  }
+
+  .tasks-input-container-img img {
+    width: 40px;
+    height: 40px;
   }
 
   .tasks-input-container img:hover {
     cursor: pointer;
   }
 
-
   .view-options-container {
     display: flex;
-    margin-top: 1vh;
   }
 
   .todo-container,
