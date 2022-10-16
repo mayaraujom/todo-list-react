@@ -107,17 +107,21 @@ function List() {
         />
         {
           editing ? (
-            <img
-              src="https://i.ibb.co/znks9Ff/icons8-add-100.png"
-              alt="icon by https://icons8.com"
-              onClick={addEditTask}
-            />
+            <div className="tasks-input-container-img">
+              <img
+                src="https://i.ibb.co/znks9Ff/icons8-add-100.png"
+                alt="icon by https://icons8.com"
+                onClick={addEditTask}
+              />
+            </div>
           ) : (
-            <img
-              src="https://i.ibb.co/znks9Ff/icons8-add-100.png"
-              alt="icon by https://icons8.com"
-              onClick={addTasks}
-            />
+            <div className="tasks-input-container-img">
+              <img
+                src="https://i.ibb.co/znks9Ff/icons8-add-100.png"
+                alt="icon by https://icons8.com"
+                onClick={addTasks}
+              />
+            </div>
           )
         }
       </div>
